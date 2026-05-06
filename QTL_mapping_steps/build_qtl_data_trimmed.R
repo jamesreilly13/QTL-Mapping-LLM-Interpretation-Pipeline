@@ -201,6 +201,7 @@ for (g in groups) {
   qtl_data_trimmed[[g]]$snps <- snps_df
 }
 
+# ONLY EXPORT THIS OBJECT AFTER PERFORMING GENE ENRICHMENT AND ADDING THE RESULTS TO THE OBJECT
 py_save_object(
   qtl_data_trimmed,
   file.path(llm_data_dir, "qtl_data.pkl")
